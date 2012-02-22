@@ -7,7 +7,7 @@ require 'dalli'
 
 class BenchmarkKvs
   attr_accessor :mc_mc, :mc_md, :mc_dl, :km_mc, :km_md, :km_dl, :rd
-  BENCH_TIMES = 10000
+  BENCH_TIMES = 100000
 
   def initialize
     # Memcached(port:11211)
